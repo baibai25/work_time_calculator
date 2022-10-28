@@ -27,7 +27,7 @@ def show_info(now, workday):
     print(f"必須労働時間: {(workday.index(now.day) + 1) * 8} h")
 
 
-def main():
+def show_worktime():
     now = get_time()
     workday = get_workday(now)
     show_info(now, workday)
