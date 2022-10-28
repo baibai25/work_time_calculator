@@ -3,5 +3,6 @@ jpholiday
 
 # linter and formatter
 flake8
+mypy
 black
 isort

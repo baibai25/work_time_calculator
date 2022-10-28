@@ -4,7 +4,7 @@ from .calc_diff import calc_diff
 from .show_worktime import show_worktime
 
 
-def parser():
+def parser() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--hour", type=int, help="worked hour", required=False)
     parser.add_argument("--time", type=int, help="worked time", required=False)
@@ -13,7 +13,7 @@ def parser():
 
 
 # main()
-def main():
+def main() -> None:
     show_worktime()
 
     args = parser()
